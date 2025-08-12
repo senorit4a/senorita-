@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Login</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: white;
+    }
+    .login-container {
+        background: rgba(20, 20, 20, 0.95);
+        padding: 2rem;
+        border-radius: 16px;
+        width: 350px;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        animation: fadeIn 0.8s ease-in-out;
+    }
+    .logo {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: #00b4d8;
+    }
+    input {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        background: #2a2a2a;
+        color: white;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+    input:focus {
+        background: #333;
+        box-shadow: 0 0 5px #00b4d8;
+    }
+    button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 8px;
+        background: #00b4d8;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    button:hover {
+        background: #0096c7;
+    }
+    .link {
+        margin-top: 1rem;
+        display: block;
+        font-size: 0.9rem;
+        color: #90e0ef;
+        text-decoration: none;
+    }
+    .link:hover {
+        text-decoration: underline;
+    }
+    .or {
+        margin: 1rem 0;
+        color: #777;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">🌐 Social Login</div>
+        <input type="text" placeholder="Phone number or email address">
+        <input type="password" placeholder="Password">
+        <button>Log In</button>
+        <a href="#" class="link">Forgotten Password?</a>
+        <div class="or">──────── OR ────────</div>
+        <button style="background: #48cae4;">Create New Account</button>
+    </div>
+</body>
+</html>
